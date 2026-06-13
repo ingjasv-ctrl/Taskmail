@@ -1,17 +1,20 @@
 {
   "name": "taskmail",
   "version": "1.0.0",
-  "description": "Analizador de correos Gmail con Claude AI",
+  "description": "TaskMail - Gestor de tareas desde Gmail con IA",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "connect-redis": "^7.1.1",
+    "dotenv": "^16.0.0",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "googleapis": "^140.0.0",
-    "@anthropic-ai/sdk": "^0.24.0",
-    "node-cron": "^3.0.3",
-    "dotenv": "^16.4.5",
-    "express-session": "^1.18.0"
+    "node-cron": "^3.0.2",
+    "redis": "^4.6.0"
   }
 }
